@@ -21,8 +21,8 @@ prepend_path $HOME/bin
 
 # define the code directory
 # This is where my code exists and where I want the `c` autocomplete to work from exclusively
-if [[ -d ~/code ]]; then
-	export CODE_DIR=~/code
+if [[ -d ~/ws ]]; then
+	export CODE_DIR=~/ws
 elif [[ -d ~/Projects ]]; then
 	export CODE_DIR=~/Projects
 fi
@@ -137,3 +137,4 @@ done
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 # If a ~/.localrc zshrc exists, source it
 [[ -a ~/.localrc ]] && source ~/.localrc
+source /Users/nc-mbp-6974/.config/op/plugins.sh

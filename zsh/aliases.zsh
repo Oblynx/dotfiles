@@ -22,7 +22,7 @@ alias lld="ls -l | grep ^d"
 alias rmf="rm -rf"
 
 # Don't have me think about vim or nvim
-alias vim=nvim
+alias nvim=vim
 
 # Utilities
 alias bb='brew update && brew upgrade'

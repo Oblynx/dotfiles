@@ -28,8 +28,8 @@ if [[ "$(uname)" == "Darwin" ]]; then
 	end tell"
 fi
 
-# Change NVIM theme
-# Get the PIDs of all running nvim processes and send SIGUSR1 to each process for switching theme
-for pid in $(pgrep nvim); do
+# Change VIM theme
+# Get the PIDs of all running vim processes and send SIGUSR1 to each process for switching theme
+for pid in $(pgrep vim); do
 	kill -SIGUSR1 "$pid"
 done
