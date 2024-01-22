@@ -4,37 +4,8 @@
 [include]
 	# A local gitconfig, outside of version control.
 	# If the file doesn't exist it is silently ignored
-	path = ~/.config/git/config.local
 [alias]
 	list-aliases = "!git config -l | grep alias | cut -c 7-"
-
-	# shortcuts
-	aa = add --all
-	co = checkout
-	cb = checkout -b
-	br = branch
-	s  = status -sb
-	st = status
-	cbr = rev-parse --abbrev-ref HEAD
-	ci = commit
-	cm = commit -m
-	ca = commit --amend
-	cane = commit --amend --no-edit
-	d  = diff
-	ds = diff --staged
-	l = log --graph --pretty=format:'%Cred%h%Creset %C(bold blue)%an%C(reset) - %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-	lg = log --oneline --graph --decorate --all
-	pl = pull
-	ps = push
-	pf = push --force-with-lease
-	rb = rebase
-	rbc = rebase --continue
-	rbi = rebase -i
-	rs = reset
-	rsh = reset --hard
-	si = submodule init
-	su = submodule update
-	sub = "!git submodule sync && git submodule update"
 
 	# stats
 	# Show the committers in the last 100 commits, sorted by who has commited the most
@@ -92,17 +63,11 @@
 	unassume = update-index --no-assume-unchanged
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 	unassumeall = "!git assumed | xargs git update-index --no-assume-unchanged"
-	# 
+	#
 	delete-merged-branches = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
 
-	# # diff = diff --ignore-space-at-eol -b -w --ignore-blank-lines
-	# d = "!git diff --ignore-space-at-eol -b -w --ignore-blank-lines -- ':!**/package-lock.json' ':!**/yarn.lock'"
+	path = ~/.gitconfig.local
 
-	# # show all deleted files in the repo
-	# deleted = "!git log --diff-filter=D --summary | grep delete"
-
-	# # clean up all
-	# forget = "!git fetch -p origin && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
 [color]
 	diff = auto
 	status = auto

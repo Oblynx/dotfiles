@@ -5,28 +5,29 @@ alias reload!='RELOAD=1 source ~/.zshrc'
 alias cat='bat --paging=never'
 alias cd='z'
 alias ls='eza --icons=auto'
-alias vim='nvim'
+#alias vim='nvim'
 # alias docker='lima nerdctl'
 
 # Shortcuts
-alias d='docker'
-alias k='kubectl'
-alias n='nerdctl'
-alias g='git'
+#alias d='docker'
+alias kc='kubectl'
+#alias n='nerdctl'
+#alias g='git'
 
 # Filesystem
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias cdp='cd ~/Projects'
-alias cdd='cd ~/Downloads'
+#alias cdp='cd ~/Projects'
+#alias cdd='cd ~/Downloads'
 
 # Common use
 alias la='ls -lah'
 alias ll='ls -lh'
 
-alias rmf='rm -rf'
+# Don't have me think about vim or nvim
+alias nvim=vim
 
 alias bb='brew update && brew upgrade'
 
@@ -45,4 +46,4 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # remove broken symlinks
-alias clsym="find -L . -name . -o -type d -prune -o -type l -exec rm {} +"
+#alias clsym="find -L . -name . -o -type d -prune -o -type l -exec rm {} +"

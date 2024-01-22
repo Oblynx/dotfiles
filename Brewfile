@@ -4,37 +4,34 @@ tap "homebrew/bundle"
 
 if OS.mac?
 	# Daily use applications
-	cask "1password" # 1password
+	#cask "1password" # 1password
 	cask "1password-cli" # 1password cli
 	cask "raycast" # better spotlight instead of alfred
 	cask "google-chrome" # Google Chrome
 	cask "discord" # Discord
+	cask "vlc" # better video playback
 	cask "spotify" # Spotify
-	cask "iina" # modern video player
-	cask "obsidian" # Obsidian note taking
+	#cask "iina" # modern video player
+	#cask "obsidian" # Obsidian note taking
 
 	# Utilities applications
 	brew "mas" # Mac App Store CLI
 	brew "trash" # rm, but put in the trash rather than completely delete
-	cask "keepingyouawake" # prevent sleep
-	cask "betterdisplay" # better external displays support
-	cask "coconutbattery" # battery status
-	cask "jordanbaird-ice" # top status bar manager
+	#cask "keepingyouawake" # prevent sleep
+	#cask "betterdisplay" # better external displays support
+	#cask "coconutbattery" # battery status
+	#cask "jordanbaird-ice" # top status bar manager
 	cask "imageoptim" # a tool to optimize images
 	cask "handbrake" # a tool to convert videos
 
 	# Development applications
 	cask "ghostty" # a way better terminal emulator
-	cask "firefox@developer-edition" # Firefox Developer Edition
-	cask "visual-studio-code" # Visual Studio Code
-	cask "responsively" # a tool to develop responsive websites
-	cask "figma" # Figma
-	cask "docker" # Docker and related CLIs
-	cask "rancher" # Rancher Desktop
+	#cask "firefox@developer-edition" # Firefox Developer Edition
+	#cask "visual-studio-code" # Visual Studio Code
 
 	# Applications from App Store
-	mas "magnet", id: 441258766 # Magnet window manager
-	mas "yoink", id: 457622435 # drag-n-drop on-screen widget
+	#mas "magnet", id: 441258766 # Magnet window manager
+	#mas "yoink", id: 457622435 # drag-n-drop on-screen widget
 
 	# Fonts
 	cask "font-fira-code-nerd-font"
@@ -62,10 +59,10 @@ brew "fd" # better find
 brew "ripgrep" # very fast file searcher
 
 # live & develop in the cli
-brew "neovim" # A better vim
-brew "lazygit" # a better git ui
-brew "mise" # tooling version manager
-brew "gh" # GitHub CLI
+#brew "neovim" # A better vim
+#brew "lazygit" # a better git ui
+#brew "mise" # tooling version manager
+#brew "gh" # GitHub CLI
 brew "tree" # pretty-print directory contents
 brew "glow" # markdown viewer
 brew "jq" # json viewer

@@ -62,3 +62,6 @@ fpath=(
 )
 
 typeset -aU path
+
+export EDITOR='vim'
+export GIT_EDITOR='vim'
