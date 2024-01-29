@@ -138,3 +138,6 @@ done
 # If a ~/.localrc zshrc exists, source it
 [[ -a ~/.localrc ]] && source ~/.localrc
 source /Users/nc-mbp-6974/.config/op/plugins.sh
+
+alias l=ls
+alias ll=ls -al
