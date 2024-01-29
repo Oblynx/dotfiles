@@ -151,3 +151,5 @@ alias themeup='CATPPUCCIN_THEME="$(appearance)" source $XDG_CONFIG_HOME/catppucc
 [[ -a ~/.localrc ]] && source ~/.localrc
 
 source "${HOME}/.config/op/plugins.sh"
+alias l=ls
+alias ll=ls -al
