@@ -150,6 +150,12 @@ alias themeup='CATPPUCCIN_THEME="$(appearance)" source $XDG_CONFIG_HOME/catppucc
 # If a ~/.localrc zshrc exists, source it
 [[ -a ~/.localrc ]] && source ~/.localrc
 
+# NOTE: this probably unloads all completions
+unsetopt completealiases
+
 source "${HOME}/.config/op/plugins.sh"
 alias l=ls
 alias ll=ls -al
+alias kc="kubectl"
+source <(kc completion zsh)
+complete -F __start_kubectl kc
