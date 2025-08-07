@@ -139,5 +139,9 @@ done
 [[ -a ~/.localrc ]] && source ~/.localrc
 source /Users/nc-mbp-6974/.config/op/plugins.sh
 
+unsetopt completealiases
 alias l=ls
 alias ll=ls -al
+alias kc="kubectl"
+source <(kc completion zsh)
+complete -F __start_kubectl kc
