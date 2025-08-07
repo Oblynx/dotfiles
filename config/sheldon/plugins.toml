@@ -17,8 +17,11 @@ LESSPIPE = 'eval "$(lesspipe.sh)"'
 
 [plugins]
 
-[plugins.powerlevel10k]
-github = "romkatv/powerlevel10k"
+[plugins.spaceship]
+github = "spaceship-prompt/spaceship-prompt"
+
+[plugins.spaceship-vi-mode]
+github = "spaceship-prompt/spaceship-vi-mode"
 
 [plugins.zsh-vi-mode]
 github = "jeffreytse/zsh-vi-mode"
