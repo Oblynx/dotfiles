@@ -10,8 +10,8 @@ export ZSH=$DOTFILES/zsh
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export GPG_TTY=$(tty)
-export EDITOR='nvim'
-export GIT_EDITOR='nvim'
+export EDITOR='vim'
+export GIT_EDITOR='vim'
 if [[ -d ~/Projects ]]; then
 	export CODE_DIR=~/Projects
 fi
@@ -62,6 +62,3 @@ fpath=(
 )
 
 typeset -aU path
-
-export EDITOR='vim'
-export GIT_EDITOR='vim'
