@@ -1,7 +1,5 @@
 # vim:ft=ruby
 
-tap "homebrew/bundle"
-
 if OS.mac?
 	# Daily use applications
 	#cask "1password" # 1password
